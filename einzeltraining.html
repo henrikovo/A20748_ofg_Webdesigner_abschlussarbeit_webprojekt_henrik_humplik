@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Hundetraining Humplik</title>
+	<link href="styles/styles.css" rel="stylesheet" type="text/css">
+	<link rel="icon" href="favicon.ico">
+	<link href='https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c:400,800&display=swap' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap' rel='stylesheet' type='text/css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<!-- Lightbox  -->
+	<script src="scripts/lightbox.js"></script>
+	<link href="styles/lightbox.css" rel="stylesheet">
+
+	<!-- Slider -->
+	<link rel="stylesheet" href="styles/flexslider.css" type="text/css">
+	<script src="scripts/jquery.flexslider-min.js"></script>
+
+	<script>
+		// Flexslider
+		$('.flexslider').flexslider({
+			animation: 'fade',
+			controlsContainer: '.flexslider'
+		});
+	</script>
+
+	<script>
+		// Nach oben Button
+		$(document).ready(function() {
+			// Button erzeugen
+			var back_to_top_button = ['<a href="#top" class="back-to-top"></a>'].join("");
+			$("body").append(back_to_top_button)
+			// Button ausblenden
+			$(".back-to-top").hide();
+			// Scrollen
+			$(function() {
+				$(window).scroll(function() {
+					if ($(this).scrollTop() > 200) { // ab 200 Pixel scrollen
+						$('.back-to-top').fadeIn();
+					} else {
+						$('.back-to-top').fadeOut();
+					}
+				});
+
+				// Klicken
+				$('.back-to-top').click(function() {
+					$('body,html').animate({
+						scrollTop: 0
+					}, 800);
+					return false;
+				});
+			});
+		});
+	</script>
+
+</head>
+
+<body>
+
+	<!-- Sidebutton -->
+	<a href="kontakt.html" id="sidebtn-tel"></a>
+
+	<!-- Nach oben Button -->
+	<a href="#top" class="back-to-top"></a>
+
+	<!-- Header -->
+	<header id="header">
+		<div id="wrapper">
+			<nav>
+				<a href="index.html"><img src="images/header_logo_farbig.png" height="90" width="115" alt="Logo - Hundetraining Humplik"></a>
+				<ul class="navigation">
+					<li><a href="uebermich.html">ÜBER MICH</a>
+						<ul>
+							<li><a href="werdegang.html">Werdegang</a></li>
+							<li><a href="qualifikation.html">Qualifikation</a></li>
+							<li><a href="fortbildung.html">Fortbildungen</a></li>
+						</ul>
+					</li>
+					<li><a href="training.html" class="active">Training</a>
+						<ul>
+							<li><a href="alltagstraining.html">Alltagstraining</a></li>
+							<li><a href="einzeltraining.html" class="active">Einzeltraining</a></li>
+							<li><a href="gruppentraining.html">Gruppentraining</a></li>
+						</ul>
+					</li>
+					<li><a href="aktuell.html">Aktuell</a>
+						<ul>
+							<li><a href="news.html">News</a></li>
+							<li><a href="terminkalender.html">Terminkalender</a></li>
+							<li><a href="veranstaltungen.html">Veranstaltungen</a></li>
+						</ul>
+					</li>
+					<li><a href="preise.html">Preise</a></li>
+					<li><a href="kontakt.html">Kontakt</a></li>
+					<li><a href="medien.html">Medien</a>
+						<ul>
+							<li><a href="bilder.html">Bilder</a></li>
+							<li><a href="videos.html">Videos</a></li>
+							<li><a href="netzwerke.html">Netzwerke</a></li>
+						</ul>
+					</li>
+				</ul>
+				<div class="mobile-nav-dropdown">
+					<div class="mobile-nav-button"><span>&equiv; MENÜ</span></div>
+					<div class="mobile-nav-content">
+						<ul class="navigation">
+							<li><a href="uebermich.html">Über mich</a></li>
+							<li><a href="training.html">Training</a></li>
+							<li><a href="aktuell.html">Aktuell</a></li>
+							<li><a href="preise.html">Preise</a></li>
+							<li><a href="kontakt.html">Kontakt</a></li>
+							<li><a href="medien.html">Medien</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+
+	<!-- Content -->
+	<div class="wrapper">
+		<!-- Subnavigation -->
+		<aside class="column col_1_4">
+			<ul id="subnavigation">
+				<li><a href="alltagstraining.html">Alltagstraining</a></li>
+				<li><a href="einzeltraining.html" class="active">Einzeltraining</a></li>
+				<li><a href="gruppentraining.html">Gruppentraining</a></li>
+			</ul>
+		</aside>
+		<section class="column col_3_4">
+			<article class="row">
+				<h3>Einzeltraining</h3>
+				<img class="alignright" src="images/einzeltraining.jpg" height="180" width="261" alt="Einzeltraining">
+				<p>Dies ist die effektivste Art des Trainings. Hier kann ich intensiv auf Hund und Halter eingehen. Auf diese Weise kann ich dich
+					und deinen Hund an eurem aktuellen Kenntnisstand "abholen" und das Hundetraining so gestalten, dass du und deine Fellnase am
+					Ende der Trainingsphase genau das wisst und könnt, was ihr für euren individuellen Alltag benötigt.
+					Weil das Training auch am besten in deinem Alltag - also vor Ort - stattfinden sollte, komme ich zu dir nach Hause.</p>
+			</article>
+			<hr>
+			<article class="row">
+				<h4>Erstberatung</h4>
+				<p> Bevor du dir einen Hund anschaffst, solltest du prüfen, ob die Voraussetzungen dafür gegeben sind.
+					Hunde brauchen viel Zeit, Pflege und verursachen Kosten. Bei der Entscheidung, welche Hunderasse man sich anschaffen möchte,
+					spielen mehrere Faktoren eine Rolle.
+				</p><br>
+				<ul>
+					<li>Wieviel Zeit habe ich für den Hund?</li>
+					<li>Wieviel Auslauf kann ich dem Tier bieten?</li>
+					<li>Wohne ich in der Stadt oder auf dem Land?</li>
+					<li>Zu welchem Zweck wurde der Hund gezüchtet (Hütetrieb oder Jagdinstinkt)?</li>
+				</ul><br>
+				<p>Wenn du dich zur Anschaffung eines Hundes entschieden hast, achte bei der Auswahl der Rasse (auch bei Mischlingen) darauf,
+					welcher Hund zu dir passt. Das Aussehen des Vierbeiners sollte nicht das primäre Auswahlkriterium sein, denn auch niedliche
+					Hunde können viel Auslauf benötigen, schwer erziehbar sein oder nicht in deinem Alltag passen.</p>
+			</article>
+			<hr>
+			<article class="row">
+				<h4>Grunderziehung</h4>
+				<p>In der Grunderziehung trainieren wir alles rund um den Grundgehorsam, der den Hund zu einem zuverlässigen Alltagsbegleiter werden lässt.
+				</p><br>
+				<ul>
+					<li>Bleib</li>
+					<li>Sitz, Platz und Steh</li>
+					<li>Deckentraining</li>
+					<li>Entspannungstechniken</li>
+					<li>Aufmerksamkeit (auch bei Ablenkung)</li>
+					<li>Verhalten bei Radfahrern, Joggern & Co.</li>
+					<li>Impulskontrolle</li>
+					<li>Sicherer Abruf</li>
+					<li>Kommando "Fuß"</li>
+					<li>Leinenführigkeit</li>
+					<li>uvm.</li>
+				</ul><br>
+				<p>Die Grunderziehung ist für Hunde ab dem 7. Monat, sowie für erwachsene Hunde geeignet.</p>
+			</article>
+			<hr>
+			<article>
+				<h4>Welpen</h4>
+				<p>Ein Welpe befindet sich zwischen der 8. und 16. Woche in einer besonderen Phase, die „Sensible Phase“ genannt wird.
+					Dinge die der Welpe in dieser Zeit lernt, lernt er fürs Leben. Gelerntes wird schneller, leichter und nachhaltiger im Gehirn verankert.
+					Wichtig in dieser Zeit sind Dinge, die der Hund später einmal zuverlässig und ohne darüber nachzudenken ausführen soll.</p><br>
+				<p>Im Einzeltraining kann ich auf dich und deinen Hund intensiver und individueller eingehen.
+					Zudem können wir vor Ort direkt beginnen, den Familienzuwachs von Anfang an in das alltägliche Leben zu integrieren.
+					Hier werden dem Welpen die Grundkommandos in entspannter Lernatmosphäre - also zu Hause - vermittelt.
+					Über positive Motivation werden in kurzen Trainingseinheiten die ersten wichtigen Kommandos aufgebaut
+					(siehe oben).
+				</p><br>
+				<p><strong>Kombiniertes Training:</strong> In den vielen Jahren als Leiterin einer Welpengruppe, habe ich die Erfahrung gemacht,
+					dass eine Kombination aus „Welpen-Einzeltraining“ und „Welpengruppe“ die beste Grundlage für das spätere Hundeleben ist.
+					Hier geht's zur <a href="http://www.sv-og-ehingen.de/html/welpenschule_.html">Welpenschule bei der SV-OG Ehingen</a>.
+				</p>
+			</article>
+			<hr>
+			<article>
+				<h4>Junghunde</h4>
+				<p>Das Welpen-Training geht nahtlos in das Jundhunde-Training über. Hier werden weitere wesentliche Grundsteine der Erziehung eingeübt.
+					Sitz, Platz, Bleib, Abrufen unter erschwerten Bedingungen, Leinenführigkeit und vieles mehr…
+					Ein wesentlicher Bestandteil dieses Trainings, ist das Eingehen auf die Veränderungen die in dieser Zeit geschehen.
+					Da das niedliche Welpen-aussehen verschwindet und die Hunde bald von Statur und Fell „erwachsen“ aussehen, passiert es leider allzu oft,
+					dass von einem Junghund Dinge erwartet werden, die er noch nicht leisten kann. Von der Pubertät über die Adoleszenz bis hin zur geistigen Reife,
+					finden einige Veränderungen statt, die es zu verstehen und zu Händeln gilt.
+					Mit viel Know-how und Einfühlungsvermögen helfe ich dir durch diese turbulente Zeit und stehe dir mit Rat und Tat zur Seite.
+				</p>
+			</article>
+			<hr>
+			<footer>
+				<a href="kontakt.html" class="btn btn1">trainingsplatz sichern</a>
+			</footer>
+		</section>
+	</div>
+
+	<!-- Footer -->
+	<footer id="footer">
+		<div class="wrapper">
+			<div class="column col_1_3">
+				<div class="footertext">
+					<h4>Kontakt</h4>
+					<p>Natascha Humplik<br>
+						Hundetraining Humplik<br>
+						Gottliebstraße 2<br>
+						89134 Blaustein<br><br>
+						Telefon: +49 1525 3878667<br>
+						E-Mail:<a href="mailto:mail@hundetraining-humplik.de" class="footertext"> mail@hundetraining-humplik.de</a></p><br>
+					<p><a href="kontakt.html" class="footertext">Impressum</a> | <a href="kontakt.html" class="footertext">Datenschutz</a></p>
+				</div>
+			</div>
+			<div class="column col_1_3">
+				<div class="netzwerke footertext">
+					<h4>Netzwerke</h4>
+					<p><a href="https://www.facebook.com" class="footertext">facebook</a></p>
+					<p><a href="https://www.youtube.com" class="footertext">youtube</a></p>
+					<p><a href="https://www.instagram.com" class="footertext">instagram</a></p>
+				</div>
+			</div>
+			<div class="column col_1_3">
+				<div class="anfahrt footertext">
+					<h4>Anfahrt</h4>
+					<p><a href="http://www.sv-og-ehingen.de/html/kontakt_anfahrtskizze.html" class="footertext">Trainingsplatz SV OG Ehingen</a>
+						<p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+</body>
+
+</html>

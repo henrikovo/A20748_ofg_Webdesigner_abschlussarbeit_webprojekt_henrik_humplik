@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Hundetraining Humplik</title>
+	<link href="styles/styles.css" rel="stylesheet" type="text/css">
+	<link rel="icon" href="favicon.ico">
+	<link href='https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c:400,800&display=swap' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap' rel='stylesheet' type='text/css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<!-- Lightbox  -->
+	<script src="scripts/lightbox.js"></script>
+	<link href="styles/lightbox.css" rel="stylesheet">
+
+	<!-- Slider -->
+	<link rel="stylesheet" href="styles/flexslider.css" type="text/css">
+	<script src="scripts/jquery.flexslider-min.js"></script>
+
+	<script>
+		// Flexslider
+		$('.flexslider').flexslider({
+			animation: 'fade',
+			controlsContainer: '.flexslider'
+		});
+	</script>
+
+	<script>
+		// Nach oben Button
+		$(document).ready(function() {
+			// Button erzeugen
+			var back_to_top_button = ['<a href="#top" class="back-to-top"></a>'].join("");
+			$("body").append(back_to_top_button)
+			// Button ausblenden
+			$(".back-to-top").hide();
+			// Scrollen
+			$(function() {
+				$(window).scroll(function() {
+					if ($(this).scrollTop() > 200) { // ab 200 Pixel scrollen
+						$('.back-to-top').fadeIn();
+					} else {
+						$('.back-to-top').fadeOut();
+					}
+				});
+
+				// Klicken
+				$('.back-to-top').click(function() {
+					$('body,html').animate({
+						scrollTop: 0
+					}, 800);
+					return false;
+				});
+			});
+		});
+	</script>
+
+</head>
+
+<body>
+
+	<!-- Sidebutton -->
+	<a href="kontakt.html" id="sidebtn-tel"></a>
+
+	<!-- Nach oben Button -->
+	<a href="#top" class="back-to-top"></a>
+
+	<!-- Header -->
+	<header id="header">
+		<div id="wrapper">
+			<nav>
+				<a href="index.html"><img src="images/header_logo_farbig.png" height="90" width="115" alt="Logo - Hundetraining Humplik"></a>
+				<ul class="navigation">
+					<li><a href="uebermich.html">ÜBER MICH</a>
+						<ul>
+							<li><a href="werdegang.html">Werdegang</a></li>
+							<li><a href="qualifikation.html">Qualifikation</a></li>
+							<li><a href="fortbildung.html">Fortbildungen</a></li>
+						</ul>
+					</li>
+					<li><a href="training.html" class="active">Training</a>
+						<ul>
+							<li><a href="alltagstraining.html" class="active">Alltagstraining</a></li>
+							<li><a href="einzeltraining.html">Einzeltraining</a></li>
+							<li><a href="gruppentraining.html">Gruppentraining</a></li>
+						</ul>
+					</li>
+					<li><a href="aktuell.html">Aktuell</a>
+						<ul>
+							<li><a href="news.html">News</a></li>
+							<li><a href="terminkalender.html">Terminkalender</a></li>
+							<li><a href="veranstaltungen.html">Veranstaltungen</a></li>
+						</ul>
+					</li>
+					<li><a href="preise.html">Preise</a></li>
+					<li><a href="kontakt.html">Kontakt</a></li>
+					<li><a href="medien.html">Medien</a>
+						<ul>
+							<li><a href="bilder.html">Bilder</a></li>
+							<li><a href="videos.html">Videos</a></li>
+							<li><a href="netzwerke.html">Netzwerke</a></li>
+						</ul>
+					</li>
+				</ul>
+				<div class="mobile-nav-dropdown">
+					<div class="mobile-nav-button"><span>&equiv; MENÜ</span></div>
+					<div class="mobile-nav-content">
+						<ul class="navigation">
+							<li><a href="uebermich.html">Über mich</a></li>
+							<li><a href="training.html">Training</a></li>
+							<li><a href="aktuell.html">Aktuell</a></li>
+							<li><a href="preise.html">Preise</a></li>
+							<li><a href="kontakt.html">Kontakt</a></li>
+							<li><a href="medien.html">Medien</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+
+	<!-- Content -->
+	<div class="wrapper">
+		<!-- Subnavigation -->
+		<aside class="column col_1_4">
+			<ul id="subnavigation">
+				<li><a href="alltagstraining.html" class="active">Alltagstraining</a></li>
+				<li><a href="einzeltraining.html">Einzeltraining</a></li>
+				<li><a href="gruppentraining.html">Gruppentraining</a></li>
+			</ul>
+		</aside>
+		<section class="column col_3_4">
+			<article class="row">
+				<h3>Auslastung im Alltag</h3>
+				<img class="alignright" src="images/auslastung.jpg" height="180" width="261" alt="Auslastung">
+				<p>Dies ist mit der Zeit zu meinem besonderen Steckenpferd geworden.</p>
+				<p>Ich erlebe nämlich immer wieder, dass so mancher Hund aufgrund von unerwünschtem Verhalten in die Schublade "Problemhund" gesteckt wird.
+					Dabei kann er sich durch mehr Beschäftigung zu einem zufriedeneren, ruhigeren und aufmerksameren Gefährten wandeln.
+					Um dies zu erreichen, bedarf es bei Weitem nicht so viel Aufwand wie man zuerst denken mag.
+					Man muss nicht einmal den Weg zur Hundeschule auf sich nehmen.
+				</p>
+				<p>Das Schlüsselwort ist "Alltag" und der Alltag findet nicht in der Hundeschule statt,
+					sondern zu Hause in den eigenen vier Wänden, im eigenen Garten und auf den täglichen Spaziergängen.
+					Hunde lieben es kleine Aufgaben im Haushalt erledigen zu dürfen. So mancher Vierbeiner blüht regelrecht auf,
+					wenn er vor Besuchern seinen Lieblingstrick zeigen darf und es gibt fast keine Fellnase die nicht gerne einem Duft auf den Grund geht.
+				</p>
+				<hr>
+			</article>
+			<article class="row">
+				<h4 class="uebermich">Bindung - Was ist das?</h4>
+				<img class="alignright" src="images/bindung.jpg" height="180" width="261" alt="Bindung">
+				<p>Hundetrainer und Hundehalter sprechen allzu schnell von guter oder schlechter Bindung zwischen Menschen und
+					ihren Hunden. Aber selbst unter diesen Fachleuten wird Bindung leider oft an völlig falschen Merkmalen "erkannt"
+					oder "aberkannt". Oder anders formuliert: Verhaltensweisen von Hunden werden als Merkmale für eine gute Bindung
+					gewertet, obwohl diese Merkmale nichts mit guter Bindung zu tun haben und andererseits werden Verhaltensweisen,
+					die eine gute Bindung kennzeichnen, gar nicht erkannt oder falsch, im schlechtesten Fall sogar als schlechte
+					Bindung interpretiert. Bei <a href="https://de.wikipedia.org/wiki/Bindung_(Hund)">Wikipedia</a>
+					ist die theoretische Bedeutung von Bindung zwischen Mensch und Hund ausführlich beschrieben.
+				</p><br>
+				<p>In der Trainings-Praxis werden wir mit folgenden Themen arbeiten, die eine Bindung zwischen Mensch
+					und Tier ausmachen können:</p><br>
+				<ul>
+					<li>Fürsorge</li>
+					<li>Qualitätszeit</li>
+					<li>Spaziergänge</li>
+					<li>Spiel & Spaß</li>
+				</ul>
+				<hr>
+			</article>
+			<article class="row">
+				<h4>Tür zu!</h4>
+				<iframe class="alignleft" width="261" height="180" src="https://www.youtube.com/embed/8jkrM9k11No" frameborder="0" allow="accelerometer;
+				autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<p>Ich habe meinem Golden Retriever Rüden zum Beispiel den Befehl "Tür zu" beigebracht.
+					Unter der Rubrik <a class="linktext" href="medien.html">Medien</a> findest du noch mehr Bilder und Videos,
+					die in Richtung Auslastung des Hundes gehen. Hier geht's dann unter anderem auch um Nasenarbeit bei den Spaziergängen.</p>
+				<hr>
+			</article>
+			<article class="row">
+				<h4>Trickdogging - auch für Senioren</h4>
+				<img class="alignright" src="images/trickdogging.jpg" height="180" width="261" alt="Trickdogging">
+				<p>Es gibt viele Möglichkeiten, seinem Hund kleine Kunststücke beizubringen. Das gilt für alle Altersklassen.
+					Ein Hund, der schon in die Jahre gekommen ist und gar keine aufregenden Spaziergänge mehr nötig hat, kann so vom Kopf
+					her noch lange fit bleiben.
+				</p>
+				<hr>
+			</article>
+			<article class="row">
+				<img class="alignleft" src="images/schlafender_hund.jpg" height="180" width="261" alt="Schlafender Hund">
+				<blockquote>Der Lohn für jede Trainingsstund', ist ein zufriedener, schlafender Hund.</blockquote>
+				<p>Durch meine jahrelange Erfahrung auf diesem Gebiet, kenne ich die Vorlieben der einzelnen Rassen und erarbeite
+					gemeinsam mit dem Besitzer einen passenden Auslastungsplan der in den Alltag des Menschen integriert werden kann.
+					Diesen Plan bauen wir dann Stück für Stück gemeinsam im Training auf und schaffen damit die Grundlage für ein
+					glückliches und zufriedenes Miteinander.
+				</p>
+				<hr>
+			</article>
+			<a href="kontakt.html" class="btn btn1">trainingsplatz sichern</a>
+		</section>
+	</div>
+
+	<!-- Footer -->
+	<footer id="footer">
+		<div class="wrapper">
+			<div class="column col_1_3">
+				<div class="footertext">
+					<h4>Kontakt</h4>
+					<p>Natascha Humplik<br>
+						Hundetraining Humplik<br>
+						Gottliebstraße 2<br>
+						89134 Blaustein<br><br>
+						Telefon: +49 1525 3878667<br>
+						E-Mail:<a href="mailto:mail@hundetraining-humplik.de" class="footertext"> mail@hundetraining-humplik.de</a></p><br>
+					<p><a href="kontakt.html" class="footertext">Impressum</a> | <a href="kontakt.html" class="footertext">Datenschutz</a></p>
+				</div>
+			</div>
+			<div class="column col_1_3">
+				<div class="netzwerke footertext">
+					<h4>Netzwerke</h4>
+					<p><a href="https://www.facebook.com" class="footertext">facebook</a></p>
+					<p><a href="https://www.youtube.com" class="footertext">youtube</a></p>
+					<p><a href="https://www.instagram.com" class="footertext">instagram</a></p>
+				</div>
+			</div>
+			<div class="column col_1_3">
+				<div class="anfahrt footertext">
+					<h4>Anfahrt</h4>
+					<p><a href="http://www.sv-og-ehingen.de/html/kontakt_anfahrtskizze.html" class="footertext">Trainingsplatz SV OG Ehingen</a>
+						<p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+</body>
+
+</html>

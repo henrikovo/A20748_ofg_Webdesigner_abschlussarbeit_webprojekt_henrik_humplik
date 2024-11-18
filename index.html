@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Hundetraining Humplik</title>
+	<link href="styles/styles.css" rel="stylesheet" type="text/css">
+	<link rel="icon" href="favicon.ico">
+	<link href='https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c:400,800&display=swap' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap' rel='stylesheet' type='text/css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<!-- Lightbox  -->
+	<script src="scripts/lightbox.js"></script>
+	<link href="styles/lightbox.css" rel="stylesheet">
+
+	<!-- Slider -->
+	<link href="styles/flexslider.css" rel="stylesheet">
+	<script src="scripts/jquery.flexslider-min.js"></script>
+
+	<script>
+		// Nach oben Button
+		$(document).ready(function() {
+			// Button erzeugen
+			var back_to_top_button = ['<a href="#top" class="back-to-top"></a>'].join("");
+			$("body").append(back_to_top_button)
+			// Button ausblenden
+			$(".back-to-top").hide();
+			// Scrollen
+			$(function() {
+				$(window).scroll(function() {
+					if ($(this).scrollTop() > 200) { // ab 200 Pixel scrollen
+						$('.back-to-top').fadeIn();
+					} else {
+						$('.back-to-top').fadeOut();
+					}
+				});
+
+				// Klicken
+				$('.back-to-top').click(function() {
+					$('body,html').animate({
+						scrollTop: 0
+					}, 800);
+					return false;
+				});
+				// Flexslider
+				$('.flexslider').flexslider({
+					animation: 'fade',
+					controlsContainer: '.flexslider'
+				});
+			});
+		});
+	</script>
+
+</head>
+
+<body>
+
+	<!-- Sidebutton -->
+	<a href="kontakt.html" id="sidebtn-tel"></a>
+
+	<!-- Nach oben Button -->
+	<a href="#top" class="back-to-top"></a>
+
+	<!-- Header -->
+	<header id="header">
+		<div id="wrapper">
+			<nav>
+				<a href="index.html"><img src="images/header_logo_farbig.png" alt="Logo - Hundetraining Humplik"></a>
+				<ul class="navigation">
+					<li><a href="uebermich.html">ÜBER MICH</a>
+						<ul>
+							<li><a href="werdegang.html">Werdegang</a></li>
+							<li><a href="qualifikation.html">Qualifikation</a></li>
+							<li><a href="fortbildung.html">Fortbildungen</a></li>
+						</ul>
+					</li>
+					<li><a href="training.html">Training</a>
+						<ul>
+							<li><a href="alltagstraining.html">Alltagstraining</a></li>
+							<li><a href="einzeltraining.html">Einzeltraining</a></li>
+							<li><a href="gruppentraining.html">Gruppentraining</a></li>
+						</ul>
+					</li>
+					<li><a href="aktuell.html">Aktuell</a>
+						<ul>
+							<li><a href="news.html">News</a></li>
+							<li><a href="terminkalender.html">Terminkalender</a></li>
+							<li><a href="veranstaltungen.html">Veranstaltungen</a></li>
+						</ul>
+					</li>
+					<li><a href="preise.html">Preise</a></li>
+					<li><a href="kontakt.html">Kontakt</a></li>
+					<li><a href="medien.html">Medien</a>
+						<ul>
+							<li><a href="bilder.html">Bilder</a></li>
+							<li><a href="videos.html">Videos</a></li>
+							<li><a href="netzwerke.html">Netzwerke</a></li>
+						</ul>
+					</li>
+				</ul>
+				<div class="mobile-nav-dropdown">
+					<div class="mobile-nav-button"><span>&equiv; MENÜ</span></div>
+					<div class="mobile-nav-content">
+						<ul class="navigation">
+							<li><a href="uebermich.html">Über mich</a></li>
+							<li><a href="training.html">Training</a></li>
+							<li><a href="aktuell.html">Aktuell</a></li>
+							<li><a href="preise.html">Preise</a></li>
+							<li><a href="kontakt.html">Kontakt</a></li>
+							<li><a href="medien.html">Medien</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+
+	<!-- Container 1 -->
+	<section id="container1">
+		<div class="wrapper">
+			<article class="column col_4_4">
+				<header class="row">
+					<div id="car">
+						<img src="images/car.png" alt="Fahrendes Auto">
+					</div>
+					<h1>Deine mobile Hundeschule</h1>
+				</header>
+				<article class="row">
+					<p class="headtext fas fa-map-marker-alt">Training am Ort deiner Wahl</p>
+					<p class="headtext fas fa-user">Individuelles Einzeltraining</p>
+					<p class="headtext fas fa-users">Gruppentraining (NEU)</p>
+					<p class="headtext fas fa-graduation-cap">Welpenschule</p>
+				</article>
+				<footer class="row">
+					<p class="btnbig"><a href="uebermich.html" class="btn btnbig">trainiere mit mir</a></p>
+				</footer>
+			</article>
+		</div>
+	</section>
+
+	<!-- Container 2 -->
+	<section id="container2">
+		<div class="wrapper">
+			<header class="row">
+				<article class="column col_3_4">
+					<h2>Trainingsangebot</h2>
+				</article>
+				<aside class="column col_1_4">
+					<p class="btn2"><a href="training.html" class="btn btn2">mehr infos</a></p>
+				</aside>
+			</header>
+			<article class="row">
+				<div class="column col_1_3">
+					<a href="alltagstraining.html">
+						<div class="teaser">
+							<img class="teaserimg" src="images/teaser_bindung.png" alt="Bindung">
+							<p class="headtext">Alltagstraining</p>
+							<ul class="teasertext">
+								<li>Auslastung</li>
+								<li>Bindung</li>
+								<li>Kopf- & Nasenarbeit</li>
+								<li>Spiel & Spaß</li>
+							</ul>
+						</div>
+					</a>
+				</div>
+				<div class="column col_1_3">
+					<a href="einzeltraining.html">
+						<div class="teaser">
+							<img class="teaserimg" src="images/teaser_einzeltraining.png" alt="Einzeltraining">
+							<p class="headtext">Einzeltraining</p>
+							<ul class="teasertext">
+								<li>Erstberatung</li>
+								<li>Grunderziehung</li>
+								<li>Welpen</li>
+								<li>Junghunde</li>
+							</ul>
+						</div>
+					</a>
+				</div>
+				<div class="column col_1_3">
+					<a href="gruppentraining.html">
+						<div class="teaser">
+							<img class="teaserimg" src="images/teaser_gruppentraining.png" alt="Gruppentraining">
+							<p class="headtext">Gruppentraining</p>
+							<ul class="teasertext">
+								<li>Welpenschule</li>
+								<li>Erlebnisspaziergang</li>
+								<li>Hundestammtisch</li>
+								<li>NEU: Gruppenarbeit</li>
+							</ul>
+						</div>
+					</a>
+				</div>
+			</article>
+			<hr>
+		</div>
+	</section>
+
+	<!-- Container 3 -->
+	<section id="container3">
+		<div class="wrapper">
+			<header class="row">
+				<article class="column col_3_4">
+					<h2>News & Termine</h2>
+				</article>
+				<aside class="column col_1_4">
+					<p class="btn2"><a href="aktuell.html" class="btn btn2">alle ansehen</a></p>
+				</aside>
+			</header>
+			<article class="row">
+				<aside class="column col_1_3">
+					<a href="gruppentraining.html"><img src="images/teamarbeit.png" alt="Teamarbeit"></a>
+				</aside>
+				<article class="teaserup col_2_3">
+					<div class="row">
+						<header class="column col_1_2">
+							<p class="headtext"><a href="gruppentraining.html" class="c3headtext">Lernen für das Leben in der Welpenschule bei der SV OG Ehingen</a></p>
+						</header>
+						<article class="column col_1_2">
+							<p class="minitext">Förderung der richtigen Verhaltens- und Wesensentwicklung des Hundes im Einzeltraining und in Kombination mit der Gruppe.</p>
+						</article>
+					</div>
+					<footer class="row">
+						<article class="column col_1_2">
+							<p class="minitext">Samstags 15:00 - 16:00 Uhr</p>
+						</article>
+						<article class="column col_1_2">
+							<p><a href="kontakt.html" class="minitext">ANMELDEN</a></p>
+						</article>
+					</footer>
+				</article>
+				<article class="teaserdown col_2_3">
+					<div class="row">
+						<header class="column col_1_2">
+							<p class="headtext"><a href="gruppentraining.html" class="c3headtext">Einladung zum Hundestammtisch</a></p>
+						</header>
+						<article class="column col_1_2">
+							<p class="minitext">Alle drei Monate treffen wir uns, um über interessante Themen rund um die Vierbeiner zu sprechen.</p>
+						</article>
+					</div>
+					<footer class="row">
+						<article class="column col_1_2">
+							<p class="minitext">Nächster Termin: 22.05.2020</p>
+						</article>
+						<article class="column col_1_2">
+							<p><a class="minitext" href="kontakt.html">ANMELDEN</a></p>
+						</article>
+					</footer>
+				</article>
+			</article>
+			<hr>
+		</div>
+	</section>
+
+	<!-- Container 4 Slider -->
+	<section id="container4">
+		<div class="wrapper">
+			<header class="row">
+				<article class="column col_3_4">
+					<h2>Bilder & Videos</h2>
+				</article>
+				<aside class="column col_1_4">
+					<p class="btn2"><a href="medien.html" class="btn btn2">zu den medien</a></p>
+				</aside>
+			</header>
+			<article class="flex-container row">
+				<div class="flexslider">
+					<ul class="slides">
+						<li>
+							<img src="images/slider_1.jpg" alt="Slider 1" />
+						</li>
+						<li>
+							<img src="images/slider_2.jpg" alt="Slider 2" />
+						</li>
+						<li>
+							<img src="images/slider_3.jpg" alt="Slider 3" />
+						</li>
+						<li>
+							<img src="images/slider_4.jpg" alt="Slider 4" />
+						</li>
+						<li>
+							<img src="images/slider_5.jpg" alt="Slider 5" />
+						</li>
+						<li>
+							<img src="images/slider_6.jpg" alt="Slider 6" />
+						</li>
+						<li>
+							<img src="images/slider_7.jpg" alt="Slider 7" />
+						</li>
+						<li>
+							<img src="images/slider_8.jpg" alt="Slider 8" />
+						</li>
+						<li>
+							<img src="images/slider_9.jpg" alt="Slider 9" />
+						</li>
+						<li>
+							<img src="images/slider_10.jpg" alt="Slider 10" />
+						</li>
+						<li>
+							<img src="images/slider_11.jpg" alt="Slider 11" />
+						</li>
+					</ul>
+				</div>
+			</article>
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<footer id="footer">
+		<div class="wrapper">
+			<div class="column col_1_3">
+				<div class="footertext">
+					<h4>Kontakt</h4>
+					<p>Natascha Humplik<br>
+						Hundetraining Humplik<br>
+						Gottliebstraße 2<br>
+						89134 Blaustein<br><br>
+						Telefon: +49 1525 3878667<br>
+						E-Mail:<a href="mailto:mail@hundetraining-humplik.de" class="footertext"> mail@hundetraining-humplik.de</a></p><br>
+					<p><a href="kontakt.html" class="footertext">Impressum</a> | <a href="kontakt.html" class="footertext">Datenschutz</a></p>
+				</div>
+			</div>
+			<div class="column col_1_3">
+				<div class="netzwerke footertext">
+					<h4>Netzwerke</h4>
+					<p><a href="https://www.facebook.com" class="footertext">facebook</a></p>
+					<p><a href="https://www.youtube.com" class="footertext">youtube</a></p>
+					<p><a href="https://www.instagram.com" class="footertext">instagram</a></p>
+				</div>
+			</div>
+			<div class="column col_1_3">
+				<div class="anfahrt footertext">
+					<h4>Anfahrt</h4>
+					<p><a href="http://www.sv-og-ehingen.de/html/kontakt_anfahrtskizze.html" class="footertext">Trainingsplatz SV OG Ehingen</a>
+						<p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+</body>
+
+</html>

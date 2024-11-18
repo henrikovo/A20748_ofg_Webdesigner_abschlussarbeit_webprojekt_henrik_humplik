@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Hundetraining Humplik</title>
+	<link href="styles/styles.css" rel="stylesheet" type="text/css">
+	<link rel="icon" href="favicon.ico">
+	<link href='https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c:400,800&display=swap' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap' rel='stylesheet' type='text/css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<!-- Lightbox  -->
+	<script src="scripts/lightbox.js"></script>
+	<link href="styles/lightbox.css" rel="stylesheet">
+
+	<!-- Slider -->
+	<link rel="stylesheet" href="styles/flexslider.css" type="text/css">
+	<script src="scripts/jquery.flexslider-min.js"></script>
+
+	<script>
+		// Flexslider
+		$('.flexslider').flexslider({
+			animation: 'fade',
+			controlsContainer: '.flexslider'
+		});
+	</script>
+
+	<script>
+		// Nach oben Button
+		$(document).ready(function() {
+			// Button erzeugen
+			var back_to_top_button = ['<a href="#top" class="back-to-top"></a>'].join("");
+			$("body").append(back_to_top_button)
+			// Button ausblenden
+			$(".back-to-top").hide();
+			// Scrollen
+			$(function() {
+				$(window).scroll(function() {
+					if ($(this).scrollTop() > 200) { // ab 200 Pixel scrollen
+						$('.back-to-top').fadeIn();
+					} else {
+						$('.back-to-top').fadeOut();
+					}
+				});
+
+				// Klicken
+				$('.back-to-top').click(function() {
+					$('body,html').animate({
+						scrollTop: 0
+					}, 800);
+					return false;
+				});
+			});
+		});
+	</script>
+
+</head>
+
+<body>
+
+	<!-- Sidebutton -->
+	<a href="kontakt.html" id="sidebtn-tel"></a>
+
+	<!-- Nach oben Button -->
+	<a href="#top" class="back-to-top"></a>
+
+	<!-- Header -->
+	<header id="header">
+		<div id="wrapper">
+			<nav>
+				<a href="index.html"><img src="images/header_logo_farbig.png" height="90" width="115" alt="Logo - Hundetraining Humplik"></a>
+				<ul class="navigation">
+					<li><a href="uebermich.html" class="active">ÜBER MICH</a>
+						<ul>
+							<li><a href="werdegang.html">Werdegang</a></li>
+							<li><a href="qualifikation.html">Qualifikation</a></li>
+							<li><a href="fortbildung.html" class="active">Fortbildungen</a></li>
+						</ul>
+					</li>
+					<li><a href="training.html">Training</a>
+						<ul>
+							<li><a href="alltagstraining.html">Alltagstraining</a></li>
+							<li><a href="einzeltraining.html">Einzeltraining</a></li>
+							<li><a href="gruppentraining.html">Gruppentraining</a></li>
+						</ul>
+					</li>
+					<li><a href="aktuell.html">Aktuell</a>
+						<ul>
+							<li><a href="news.html">News</a></li>
+							<li><a href="terminkalender.html">Terminkalender</a></li>
+							<li><a href="veranstaltungen.html">Veranstaltungen</a></li>
+						</ul>
+					</li>
+					<li><a href="preise.html">Preise</a></li>
+					<li><a href="kontakt.html">Kontakt</a></li>
+					<li><a href="medien.html">Medien</a>
+						<ul>
+							<li><a href="bilder.html">Bilder</a></li>
+							<li><a href="videos.html">Videos</a></li>
+							<li><a href="netzwerke.html">Netzwerke</a></li>
+						</ul>
+					</li>
+				</ul>
+				<div class="mobile-nav-dropdown">
+					<div class="mobile-nav-button"><span>&equiv; MENÜ</span></div>
+					<div class="mobile-nav-content">
+						<ul class="navigation">
+							<li><a href="uebermich.html">Über mich</a></li>
+							<li><a href="training.html">Training</a></li>
+							<li><a href="aktuell.html">Aktuell</a></li>
+							<li><a href="preise.html">Preise</a></li>
+							<li><a href="kontakt.html">Kontakt</a></li>
+							<li><a href="medien.html">Medien</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+
+	<!-- Content -->
+	<div class="wrapper">
+		<aside class="column col_1_4">
+			<ul id="subnavigation">
+				<li><a href="werdegang.html">Werdegang</a></li>
+				<li><a href="qualifikation.html">Qualifikation</a></li>
+				<li><a href="fortbildung.html" class="active">Fortbildungen</a></li>
+			</ul>
+		</aside>
+		<section class="column col_3_4">
+			<header class="row">
+				<h3>Fortbildungen</h3>
+				<p> Ich nehme regelmäßig an unterschiedlichen Fortbildungen teil:</p>
+				<hr>
+			</header>
+			<article class="row galerie">
+				<div class="bild">
+					<img src="images/leinenaggression2.jpg" alt="Teilnahmebestätigung Leinenaggression 2" class="vorschau" title="Leinenaggression 2">
+					<img src="images/leinenaggression2.jpg" alt="Teilnahmebestätigung Leinenaggression 2" class="ansicht" title="Leinenaggression 2">
+				</div>
+				<p>03.12.2017</p>
+				<p>Internationaler Berufsverband der Hundetrainer: Leinenaggression.</p>
+				<hr>
+			</article>
+			<article class="row galerie">
+				<div class="bild">
+					<img src="images/schilddruese2.jpg" alt="Teilnahmebestätigung Schilddrüse" class="vorschau" title="Schilddrüse 2">
+					<img src="images/schilddruese2.jpg" alt="Teilnahmebestätigung Schilddrüse" class="ansicht" title="Schilddrüse 2">
+				</div>
+				<p>03.12.2017</p>
+				<p>Schilddrüsenhormone und Verhalten - Gratwanderung zwischen Wissenschaft und Einzelfall-Beobachtungen, Teil 2.</p>
+				<hr>
+			</article>
+			<article class="row galerie">
+				<div class="bild">
+					<img src="images/trainingsszenen_welpenkurs.jpg" alt="Teilnahmebestätigung Trainingsszenen Welpenkurs" class="vorschau" title="Trainingsszenen Welpenkurs">
+					<img src="images/trainingsszenen_welpenkurs.jpg" alt="Teilnahmebestätigung Trainingsszenen Welpenkurs" class="ansicht" title="Trainingsszenen Welpenkurs">
+				</div>
+				<p>11.09.2018</p>
+				<p>Beurteilung von Trainingsszenen aus einem Welpenkurs / Teil 1.</p>
+				<hr>
+			</article>
+			<article class="row galerie">
+				<div class="bild">
+					<img src="images/aggressionsprobleme.jpg" alt="Teilnahmebestätigung Aggressionsprobleme" class="vorschau" title="Aggressionsprobleme">
+					<img src="images/aggressionsprobleme.jpg" alt="Teilnahmebestätigung Aggressionsprobleme" class="ansicht" title="Aggressionsprobleme">
+				</div>
+				<p>11.09.2018</p>
+				<p>Wenn nichts mehr geht: Therapie bei Aggressionsproblemen mit schlechter Prognose / Teil 1</p>
+				<hr>
+			</article>
+			<article class="row galerie">
+				<div class="bild">
+					<img src="images/hundebegegnungen.jpg" alt="Teilnahmebestätigung Hundebegegnungen" class="vorschau" title="Hundebegegnungen">
+					<img src="images/hundebegegnungen.jpg" alt="Teilnahmebestätigung Hundebegegnungen" class="ansicht" title="Hundebegegnungen">
+				</div>
+				<p>06.02.2019</p>
+				<p>Hundebegegnungen trainieren, Hunde erfolgreich Vergesellschaften, Teil 1. Wie Hunde lernen können, Artgenossen entspannter zu begegnen.</p>
+				<hr>
+			</article>
+			<article class="row galerie">
+				<div class="bild">
+					<img src="images/mehrhundehaltung.jpg" alt="Teilnahmebestätigung Mehrhundehaltung" class="vorschau" title="Mehrhundehaltung">
+					<img src="images/mehrhundehaltung.jpg" alt="Teilnahmebestätigung Mehrhundehaltung" class="ansicht" title="Mehrhundehaltung">
+				</div>
+				<p>06.02.2019</p>
+				<p>Die Hundewohngemeinschaft / Mehrhundehaltung - Teil 1.</p>
+				<hr>
+			</article>
+			<article class="row galerie">
+				<div class="bild">
+					<img src="images/bellverhalten.jpg" alt="Teilnahmebestätigung Bellverhalten" class="vorschau" title="Bellverhalten">
+					<img src="images/bellverhalten.jpg" alt="Teilnahmebestätigung Bellverhalten" class="ansicht" title="Bellverhalten">
+				</div>
+				<p>24.05.2019</p>
+				<p>4steps4dogs Training für Mensch und Hund: Bellverhalten</p>
+				<hr>
+			</article>
+			<article class="row galerie">
+				<div class="bild">
+					<img src="images/koerpersprache_des_hundes.jpg" alt="Teilnahmebestätigung Körpersprache des Hundes" class="vorschau" title="Körpersprache">
+					<img src="images/koerpersprache_des_hundes.jpg" alt="Teilnahmebestätigung Körpersprache des Hundes" class="ansicht" title="Körpersprache">
+				</div>
+				<p>25.05.2019</p>
+				<p>4steps4dogs Training für Mensch und Hund: Körpersprache des Hundes.</p>
+				<hr>
+			</article>
+			<article class="row galerie">
+				<div class="bild">
+					<img src="images/leinenaggression1.jpg" alt="Teilnahmebestätigung Leinenaggression 1" class="vorschau" title="Leinenaggression 1">
+					<img src="images/leinenaggression1.jpg" alt="Teilnahmebestätigung Leinenaggression 1" class="ansicht" title="Leinenaggression 1">
+				</div>
+				<p>26.05.2019</p>
+				<p>4steps4dogs Training für Mensch und Hund: Leinenaggression.</p>
+				<hr>
+			</article>
+			<article class="row galerie">
+				<div class="bild">
+					<img src="images/schilddruese1.jpg" alt="Teilnahmebestätigung Schilddrüse 1" class="vorschau" title="Schilddrüse 1" />
+					<img src="images/schilddruese1.jpg" alt="Teilnahmebestätigung Schilddrüse 1" class="ansicht" title="Schilddrüse 1">
+				</div>
+				<p>03.12.2019</p>
+				<p>Schilddrüsenhormone und Verhalten - Gratwanderung zwischen Wissenschaft und Einzelfall-Beobachtungen, Teil 1.</p>
+				<hr>
+			</article>
+			<article class="row galerie">
+				<div class="bild">
+					<img src="images/ttouch1.jpg" alt="Teilnahmebestätigung Tellington TTouch 1" class="vorschau" title="Tellington TTouch 1">
+					<img src="images/ttouch1.jpg" alt="Teilnahmebestätigung Tellington TTouch 1" class="ansicht" title="Tellington TTouch 1">
+				</div>
+				<p>04.06.2019</p>
+				<p>Tellington TTouch im Hundetraining / Teil 1: Mehr als nur Entspannung.</p>
+				<hr>
+			</article>
+			<article class="row galerie">
+				<div class="bild">
+					<img src="images/ttouch2.jpg" alt="Teilnahmebestätigung Tellington TTouch 2" class="vorschau" title="Tellington TTouch 2">
+					<img src="images/ttouch2.jpg" alt="Teilnahmebestätigung Tellington TTouch 2" class="ansicht" title="Tellington TTouch 2">
+				</div>
+				<p>04.06.2019</p>
+				<p>Tellington TTouch im Hundetraining / Teil 2: Gesundheit und Gelassenheit fördern.</p>
+				<hr>
+			</article>
+			<footer>
+				<h5>Nähere Informationen zu den Fortbildungen erteile ich sehr gerne persönlich.</h5>
+				<p>Vielleicht hast du Fragen zu einem speziellen Seminar oder möchtest selbst an einer Fortbildung
+					teilnehmen, dann komm auf mich zu.
+				</p>
+				<a href="kontakt.html" class="btn btn1">kontakt aufnehmen</a>
+			</footer>
+		</section>
+	</div>
+
+	<!-- Footer -->
+	<footer id="footer">
+		<div class="wrapper">
+			<div class="column col_1_3">
+				<div class="footertext">
+					<h4>Kontakt</h4>
+					<p>Natascha Humplik<br>
+						Hundetraining Humplik<br>
+						Gottliebstraße 2<br>
+						89134 Blaustein<br><br>
+						Telefon: +49 1525 3878667<br>
+						E-Mail:<a href="mailto:mail@hundetraining-humplik.de" class="footertext"> mail@hundetraining-humplik.de</a></p><br>
+					<p><a href="kontakt.html" class="footertext">Impressum</a> | <a href="kontakt.html" class="footertext">Datenschutz</a></p>
+				</div>
+			</div>
+			<div class="column col_1_3">
+				<div class="netzwerke footertext">
+					<h4>Netzwerke</h4>
+					<p><a href="https://www.facebook.com" class="footertext">facebook</a></p>
+					<p><a href="https://www.youtube.com" class="footertext">youtube</a></p>
+					<p><a href="https://www.instagram.com" class="footertext">instagram</a></p>
+				</div>
+			</div>
+			<div class="column col_1_3">
+				<div class="anfahrt footertext">
+					<h4>Anfahrt</h4>
+					<p><a href="http://www.sv-og-ehingen.de/html/kontakt_anfahrtskizze.html" class="footertext">Trainingsplatz SV OG Ehingen</a>
+						<p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+</body>
+
+</html>

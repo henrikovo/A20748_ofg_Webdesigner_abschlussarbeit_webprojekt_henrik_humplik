@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Hundetraining Humplik</title>
+	<link href="styles/styles.css" rel="stylesheet" type="text/css">
+	<link rel="icon" href="favicon.ico">
+	<link href='https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c:400,800&display=swap' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap' rel='stylesheet' type='text/css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<!-- Lightbox  -->
+	<script src="scripts/lightbox.js"></script>
+	<link href="styles/lightbox.css" rel="stylesheet">
+
+	<!-- Slider -->
+	<link rel="stylesheet" href="styles/flexslider.css" type="text/css">
+	<script src="scripts/jquery.flexslider-min.js"></script>
+
+	<script>
+		// Flexslider
+		$('.flexslider').flexslider({
+			animation: 'fade',
+			controlsContainer: '.flexslider'
+		});
+	</script>
+
+	<script>
+		// Nach oben Button
+		$(document).ready(function() {
+			// Button erzeugen
+			var back_to_top_button = ['<a href="#top" class="back-to-top"></a>'].join("");
+			$("body").append(back_to_top_button)
+			// Button ausblenden
+			$(".back-to-top").hide();
+			// Scrollen
+			$(function() {
+				$(window).scroll(function() {
+					if ($(this).scrollTop() > 200) { // ab 200 Pixel scrollen
+						$('.back-to-top').fadeIn();
+					} else {
+						$('.back-to-top').fadeOut();
+					}
+				});
+
+				// Klicken
+				$('.back-to-top').click(function() {
+					$('body,html').animate({
+						scrollTop: 0
+					}, 800);
+					return false;
+				});
+			});
+		});
+	</script>
+
+</head>
+
+<body>
+
+	<!-- Sidebutton -->
+	<a href="kontakt.html" id="sidebtn-tel"></a>
+
+	<!-- Nach oben Button -->
+	<a href="#top" class="back-to-top"></a>
+
+	<!-- Header -->
+	<header id="header">
+		<div id="wrapper">
+			<nav>
+				<a href="index.html"><img src="images/header_logo_farbig.png" height="90" width="115" alt="Logo - Hundetraining Humplik"></a>
+				<ul class="navigation">
+					<li><a href="uebermich.html" class="active">ÜBER MICH</a>
+						<ul>
+							<li><a href="werdegang.html" class="active">Werdegang</a></li>
+							<li><a href="qualifikation.html">Qualifikation</a></li>
+							<li><a href="fortbildung.html">Fortbildungen</a></li>
+						</ul>
+					</li>
+					<li><a href="training.html">Training</a>
+						<ul>
+							<li><a href="alltagstraining.html">Alltagstraining</a></li>
+							<li><a href="einzeltraining.html">Einzeltraining</a></li>
+							<li><a href="gruppentraining.html">Gruppentraining</a></li>
+						</ul>
+					</li>
+					<li><a href="aktuell.html">Aktuell</a>
+						<ul>
+							<li><a href="news.html">News</a></li>
+							<li><a href="terminkalender.html">Terminkalender</a></li>
+							<li><a href="veranstaltungen.html">Veranstaltungen</a></li>
+						</ul>
+					</li>
+					<li><a href="preise.html">Preise</a></li>
+					<li><a href="kontakt.html">Kontakt</a></li>
+					<li><a href="medien.html">Medien</a>
+						<ul>
+							<li><a href="bilder.html">Bilder</a></li>
+							<li><a href="videos.html">Videos</a></li>
+							<li><a href="netzwerke.html">Netzwerke</a></li>
+						</ul>
+					</li>
+				</ul>
+				<div class="mobile-nav-dropdown">
+					<div class="mobile-nav-button"><span>&equiv; MENÜ</span></div>
+					<div class="mobile-nav-content">
+						<ul class="navigation">
+							<li><a href="uebermich.html">Über mich</a></li>
+							<li><a href="training.html">Training</a></li>
+							<li><a href="aktuell.html">Aktuell</a></li>
+							<li><a href="preise.html">Preise</a></li>
+							<li><a href="kontakt.html">Kontakt</a></li>
+							<li><a href="medien.html">Medien</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+
+	<!-- Content, fertig; evtl. Bilder zur Chronologie -->
+	<div class="wrapper">
+		<!-- Subnavigation -->
+		<aside class="column col_1_4">
+			<ul id="subnavigation">
+				<li><a href="werdegang.html" class="active">Werdegang</a></li>
+				<li><a href="qualifikation.html">Qualifikation</a></li>
+				<li><a href="fortbildung.html">Fortbildungen</a></li>
+			</ul>
+		</aside>
+		<section class="column col_3_4">
+			<header class="row">
+				<h3>Die Vorgeschichte - Susi hatte nie genug</h3>
+			</header>
+			<article class="row">
+				<img class="alignleft" src="images/werdegang.jpg" height="180" width="261" alt="Natascha mit Vereinsshirt">
+				<p>Seit ich in meiner Kindheit den ersten Hund bekommen hatte, ließ mich die Faszination über diese
+					wundervollen Tiere nicht mehr los. Ein Leben ohne Hunde wäre für mich tatsächlich undenkbar,
+					sodass dieses Zitat von Heinz Rühmann wie für mich gemacht ist:</p><br>
+				<blockquote>Natürlich kann man ohne Hund leben, es lohnt sich nur nicht.</blockquote>
+				<p>Mein Werdegang zum Hundetrainer war schleichend und hatte vor 11 Jahren mit meiner Hündin „Susi“
+					(damals ca. drei Jahre alt) seinen Anfang.</p>
+				<img class="alignright" src="images/susi_spielzeug.jpg" height="180" width="261" alt="Susi mit Spielzeug">
+				<p>Nachdem ich es mir nach einem dreistündigen Spaziergang am Wochenende auf dem Sofa gemütlich gemacht hatte,
+					kam meine Susi schwanzwedelnd mit einem Spielzeug daher. Ich konnte es nicht fassen, mir taten die Füße weh
+					und mein Hund hatte immer noch nicht genug!?!?! Das gibt es doch nicht!</p>
+				<p>Dieser Vorfall war sozusagen der Startschuss dafür, dass ich begonnen hatte, mich mehr über Hunde und die Möglichkeit,
+					sie zu trainieren und auszulasten, zu informieren.</p>
+				<hr>
+			</article>
+			<header class="row">
+				<h3>Chronologie meiner Trainerlaufbahn</h3>
+			</header>
+			<article class="row">
+				<img class="alignleft" src="images/kobi1.jpg" height="180" width="261" alt="Kobi Training">
+				<P><strong>2007</strong> habe ich die Gruppe "Spiel & Spaß mit dem Hund" bei der SV-OG-Ehingen gegründet.
+					Hier lehre ich, wie man durch Kopf- und Nasenarbeit einen ausgeglicheneren Hund bekommt und
+					ganz nebenbei dadurch die Bindung stärkt. Inzwischen wurde der Name dieser Übungsstunde in KoBi
+					(Kopf & Bindung) umbenannt, und ich bin bis zum heutigen Tag dort als Trainerin im Einsatz.</p>
+				<br>
+				<p><strong>2010</strong> übernahm ich dann zusätzlich die Welpengruppe des Vereins, die ich ebenfalls bis heute leite. Bei den knuffigen,
+					tapsigen Wonneproppen werde auch ich als scheinbar abgeklärte Trainerin jedes Mal aufs Neue verzaubert...</p>
+				<br>
+				<p><strong>2013</strong> ist unser Golden Retriever Rüde "Merlin" bei uns eingezogen. Wir bekamen Ihn im Alter von ca. zweieinhalb Jahren
+					und sahen uns mit so manchem Verhaltensproblem konfrontiert. Durch ihn wuchs der Wunsch, noch mehr über das Wesen
+					der Hunde zu lernen.</p>
+				<br>
+				<p><strong>2017</strong> habe ich dann meine Ausbildung zur Hundetrainerin bei der ATN in der Schweiz mit Erfolg abgeschlossen.
+					Hier geht's zu meinen <a href="qualifikation.html">Abschlusszeugnissen</a>.</p>
+				<hr>
+			</article>
+			<footer>
+				<h5>Hund und Mensch im Blick</h5>
+				<p>Möchtest du von meiner Ausbildung und Erfahrung profitieren?</p>
+				<p>Möchtest du mehr über deinen Hund erfahren, ihn mit Spaß und Freude erziehen?</p>
+				<p>Dann trainiere mit mir, ich fahre zu dir nach Hause oder wir trainieren an einem Ort deiner Wahl.</p>
+				<a href="training.html" class="btn btn1">trainingsangebot</a>
+			</footer>
+		</section>
+	</div>
+
+	<!-- Footer -->
+	<footer id="footer">
+		<div class="wrapper">
+			<div class="column col_1_3">
+				<div class="footertext">
+					<h4>Kontakt</h4>
+					<p>Natascha Humplik<br>
+						Hundetraining Humplik<br>
+						Gottliebstraße 2<br>
+						89134 Blaustein<br><br>
+						Telefon: +49 1525 3878667<br>
+						E-Mail:<a href="mailto:mail@hundetraining-humplik.de" class="footertext"> mail@hundetraining-humplik.de</a></p><br>
+					<p><a href="kontakt.html" class="footertext">Impressum</a> | <a href="kontakt.html" class="footertext">Datenschutz</a></p>
+				</div>
+			</div>
+			<div class="column col_1_3">
+				<div class="netzwerke footertext">
+					<h4>Netzwerke</h4>
+					<p><a href="https://www.facebook.com" class="footertext">facebook</a></p>
+					<p><a href="https://www.youtube.com" class="footertext">youtube</a></p>
+					<p><a href="https://www.instagram.com" class="footertext">instagram</a></p>
+				</div>
+			</div>
+			<div class="column col_1_3">
+				<div class="anfahrt footertext">
+					<h4>Anfahrt</h4>
+					<p><a href="http://www.sv-og-ehingen.de/html/kontakt_anfahrtskizze.html" class="footertext">Trainingsplatz SV OG Ehingen</a>
+						<p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+</body>
+
+</html>

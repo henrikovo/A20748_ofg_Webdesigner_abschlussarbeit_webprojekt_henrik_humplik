@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Hundetraining Humplik</title>
+	<link href="styles/styles.css" rel="stylesheet" type="text/css">
+	<link rel="icon" href="favicon.ico">
+	<link href='https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c:400,800&display=swap' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap' rel='stylesheet' type='text/css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<!-- Lightbox  -->
+	<script src="scripts/lightbox.js"></script>
+	<link href="styles/lightbox.css" rel="stylesheet">
+
+	<!-- Slider -->
+	<link rel="stylesheet" href="styles/flexslider.css" type="text/css">
+	<script src="scripts/jquery.flexslider-min.js"></script>
+
+	<script>
+		// Flexslider
+		$('.flexslider').flexslider({
+			animation: 'fade',
+			controlsContainer: '.flexslider'
+		});
+	</script>
+
+	<script>
+		// Nach oben Button
+		$(document).ready(function() {
+			// Button erzeugen
+			var back_to_top_button = ['<a href="#top" class="back-to-top"></a>'].join("");
+			$("body").append(back_to_top_button)
+			// Button ausblenden
+			$(".back-to-top").hide();
+			// Scrollen
+			$(function() {
+				$(window).scroll(function() {
+					if ($(this).scrollTop() > 200) { // ab 200 Pixel scrollen
+						$('.back-to-top').fadeIn();
+					} else {
+						$('.back-to-top').fadeOut();
+					}
+				});
+
+				// Klicken
+				$('.back-to-top').click(function() {
+					$('body,html').animate({
+						scrollTop: 0
+					}, 800);
+					return false;
+				});
+			});
+		});
+	</script>
+
+</head>
+
+<body>
+
+	<!-- Sidebutton -->
+	<a href="kontakt.html" id="sidebtn-tel"></a>
+
+	<!-- Nach oben Button -->
+	<a href="#top" class="back-to-top"></a>
+
+	<!-- Header -->
+	<header id="header">
+		<div id="wrapper">
+			<nav>
+				<a href="index.html"><img src="images/header_logo_farbig.png" height="90" width="115" alt="Logo - Hundetraining Humplik"></a>
+				<ul class="navigation">
+					<li><a href="uebermich.html">ÜBER MICH</a>
+						<ul>
+							<li><a href="werdegang.html">Werdegang</a></li>
+							<li><a href="qualifikation.html">Qualifikation</a></li>
+							<li><a href="fortbildung.html">Fortbildungen</a></li>
+						</ul>
+					</li>
+					<li><a href="training.html" class="active">Training</a>
+						<ul>
+							<li><a href="alltagstraining.html">Alltagstraining</a></li>
+							<li><a href="einzeltraining.html">Einzeltraining</a></li>
+							<li><a href="gruppentraining.html" class="active">Gruppentraining</a></li>
+						</ul>
+					</li>
+					<li><a href="aktuell.html">Aktuell</a>
+						<ul>
+							<li><a href="news.html">News</a></li>
+							<li><a href="terminkalender.html">Terminkalender</a></li>
+							<li><a href="veranstaltungen.html">Veranstaltungen</a></li>
+						</ul>
+					</li>
+					<li><a href="preise.html">Preise</a></li>
+					<li><a href="kontakt.html">Kontakt</a></li>
+					<li><a href="medien.html">Medien</a>
+						<ul>
+							<li><a href="bilder.html">Bilder</a></li>
+							<li><a href="videos.html">Videos</a></li>
+							<li><a href="netzwerke.html">Netzwerke</a></li>
+						</ul>
+					</li>
+				</ul>
+				<div class="mobile-nav-dropdown">
+					<div class="mobile-nav-button"><span>&equiv; MENÜ</span></div>
+					<div class="mobile-nav-content">
+						<ul class="navigation">
+							<li><a href="uebermich.html">Über mich</a></li>
+							<li><a href="training.html">Training</a></li>
+							<li><a href="aktuell.html">Aktuell</a></li>
+							<li><a href="preise.html">Preise</a></li>
+							<li><a href="kontakt.html">Kontakt</a></li>
+							<li><a href="medien.html">Medien</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+
+	<!-- Content -->
+	<div class="wrapper">
+		<!-- Subnavigation -->
+		<aside class="column col_1_4">
+			<ul id="subnavigation">
+				<li><a href="alltagstraining.html">alltagstraining</a></li>
+				<li><a href="einzeltraining.html">Einzeltraining</a></li>
+				<li><a href="gruppentraining.html" class="active">Gruppentraining</a></li>
+			</ul>
+		</aside>
+		<section class="column col_3_4">
+			<header class="row">
+				<h2>Gruppentraining</h2>
+				<img class="alignright" src="images/gruppentraining.jpg" height="180" width="261" alt="Gruppentraining">
+				<p>Damit aus Hund und Mensch ein Team wird, das sich aufeinander verlassen kann, müssen beide Vertrauen
+					zueinander haben und die Aufgabenverteilung in dieser Beziehung verstehen.</p>
+				<p>In der Gruppe wird das Training nochmal erschwert, aber mit nachhaltigem Lernerfolg.</p>
+			</header>
+			<hr>
+			<article class="row">
+				<h3>Gruppenarbeit - Erziehung...aber anders!</h3>
+				<p> Mit diesem Gruppentraining biete ich eine besondere Art des Hundetrainings.
+					Der Mensch bringt seinem Hund neben den klassischen Signalen wie "Sitz, Platz & Bleib",
+					auch Elemente aus Trickdogging, Gehirnjogging und Nasenarbeit bei.
+					Durch die Kombination dieser Elemente mit „Distanzarbeit“ entwickelt sich im Lauf des
+					Trainings ein aufmerksamer und lenkbarer Hund, der Spaß an der Kommunikation und der
+					Arbeit mit seinem Menschen hat.
+					Durch die Anwesenheit von anderen Hunden lernen die Vierbeiner problemlos und spielerisch
+					mit Artgenossen umzugehen. Ganz ohne Druck motivieren wir die Hunde auch bei Ablenkung
+					mitzuarbeiten.</p>
+			</article>
+			<article class="row">
+				<div class="column col_1_2">
+					<p class="headtext headtext2">Was erwartet dich?</p>
+					<ul>
+						<li>erlernen oder vertiefen der klassischen Kommandos wie z.B.: „Sitz, Platz & Bleib“</li>
+						<li>Kommandos aus dem Bereich „Trickdogging“</li>
+						<li>Denksportaufgaben</li>
+						<li>Nasenarbeit und Schnüffelspiele</li>
+						<li>Markertraining</li>
+					</ul>
+					<img class="alignleft" src="images/gruppenarbeit.jpg" alt="">
+				</div>
+				<div class="column col_1_2">
+					<p class="headtext headtext2">Ziele des Trainings</p>
+					<ul>
+						<li>geistige und körperliche Auslastung</li>
+						<li>Steigerung der Akzeptanz des Hundehalters</li>
+						<li>bessere Kommunikation zwischen Mensch und Hund </li>
+						<li>Verbesserung der Aufmerksamkeit des Hundes und vermehrte Fokussierung auf den Hundehalter </li>
+						<li>Steigerung des Selbstbewusstseins und Förderung der Entscheidungsfähigkeiten des Hundes </li>
+						<li>und vor allem….Spaß am Training für Hund UND Mensch.</li>
+					</ul>
+				</div>
+			</article>
+			<article class="row">
+				<strong>Das Gruppentraining ist auch eine sinnvolle und abwechslungsreiche Ergänzung zum Einzelunterricht.
+					Die Teilnehmerzahl beträgt maximal 5 Personen pro Trainingsstunde.</strong>
+			</article>
+			<article class="row">
+				<a class="column col_1_3 teaser" href="terminkalender.html">
+					<p class="headtext headtext2">Wann?</p>
+					<p class="headtext2">Immer freitags</p>
+					<p class="headtext2">18:00 - 20:00 Uhr</p>
+					<p>&#8658; Terminkalender</p>
+				</a>
+				<a class="column col_1_3 teaser" href="http://www.sv-og-ehingen.de/html/kontakt_anfahrtskizze.html">
+					<p class="headtext headtext2">Wo?</p>
+					<p class="headtext2">Vereinsgelände</p>
+					<p class="headtext2">SV-OG-Ehingen</p>
+					<p>&#8658; Anfahrtsskizze</p>
+				</a>
+				<a class="column col_1_3 teaser" href="preise.html">
+					<p class="headtext headtext2">Preis</p>
+					<p class="headtext2">10er Gruppenkarte</p>
+					<p class="headtext2">€ 90,00</p>
+					<p>&#8658; Preisliste</p>
+				</a>
+			</article>
+			<hr>
+			<article class="row">
+				<header>
+					<h3>Welpenschule "Lernen für die Zukunft"</h3>
+					<p> In der Welpenschule wird die richtige Verhaltens- und Wesensentwicklung des Hundes gefördert und gesteuert.
+						In kleinen Gruppen von 4-6 Welpen wird spielerisch Wichtiges erlernt.</p>
+				</header>
+				<article class="row">
+					<div class="column col_1_2">
+						<p class="headtext headtext2">Lehrninhalte</p>
+						<ul>
+							<li>Sozialverhalten mit Artgenossen</li>
+							<li>Der vertrauensvolle und sicherere Umgang mit Menschen</li>
+							<li>Eine sorgsame Gewöhnung an Umweltreize</li>
+							<li>erste wichtige Kommandos</li>
+						</ul><br>
+					</div>
+					<div class="column col_1_2">
+						<img class="alignright" src="images/welpenschule.jpg" alt="Welpenschule">
+					</div>
+				</article>
+				<footer>
+					<strong>Für Fragen habe ich natürlich auch immer ein offenes Ohr.</strong><br>
+					Die Welpenschule findet Samstags auf dem Gelände der SV-OG-Ehingen statt.
+					Da die Teilnehmerzahl begrenzt ist, bitte ich um vorherige Anmeldung.
+					<hr>
+					<a href="kontakt.html" class="btn btn1">trainingsplatz sichern</a>
+				</footer>
+			</article>
+		</section>
+	</div>
+
+	<!-- Footer -->
+	<footer id="footer">
+		<div class="wrapper">
+			<div class="column col_1_3">
+				<div class="footertext">
+					<h4>Kontakt</h4>
+					<p>Natascha Humplik<br>
+						Hundetraining Humplik<br>
+						Gottliebstraße 2<br>
+						89134 Blaustein<br><br>
+						Telefon: +49 1525 3878667<br>
+						E-Mail:<a href="mailto:mail@hundetraining-humplik.de" class="footertext"> mail@hundetraining-humplik.de</a></p><br>
+					<p><a href="kontakt.html" class="footertext">Impressum</a> | <a href="kontakt.html" class="footertext">Datenschutz</a></p>
+				</div>
+			</div>
+			<div class="column col_1_3">
+				<div class="netzwerke footertext">
+					<h4>Netzwerke</h4>
+					<p><a href="https://www.facebook.com" class="footertext">facebook</a></p>
+					<p><a href="https://www.youtube.com" class="footertext">youtube</a></p>
+					<p><a href="https://www.instagram.com" class="footertext">instagram</a></p>
+				</div>
+			</div>
+			<div class="column col_1_3">
+				<div class="anfahrt footertext">
+					<h4>Anfahrt</h4>
+					<p><a href="http://www.sv-og-ehingen.de/html/kontakt_anfahrtskizze.html" class="footertext">Trainingsplatz SV OG Ehingen</a>
+						<p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+</body>
+
+</html>
